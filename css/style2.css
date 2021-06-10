@@ -1,0 +1,243 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    background-color: rgb(223, 158, 203);
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caixa{
+  position: relative;
+  background-color: rgb(90, 2, 90);
+  padding: 20px ;
+  height: 100px;
+  width: 350px;
+  border-radius: 20px;
+  border: rgb(255, 95, 255) 7px solid;
+}
+
+.celular{
+    background-color: rgb(7, 7, 7);
+    background-size: cover;
+    width: 280px;
+    height: 580px;
+    margin: auto;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    flex-wrap:wrap;
+    position: relative;
+    box-shadow: 1px 1px 15px  rgba(158, 30, 190, 0.911);
+}
+
+.espacamento{
+  background-color: rgba(158, 30, 190, 0.911);
+  top: 75px;
+  width: 90.5%;
+  display: block;
+  position: absolute;
+  height: 445px;
+}
+
+.cabecalho{
+    background-color:  #0A5951;
+    height: 35px;
+    display: flex;
+    padding: 3px;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+.chat{
+  background-color: rgb(187, 255, 0);
+  height: 300px;
+}
+
+.escrita{
+  background-color: #192E40;
+  padding: 15px;
+  
+  overflow: auto;
+  height: 320px;
+}
+::-webkit-scrollbar-track {
+  background-color: #054749;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: #72d9f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #9adaf8;
+}
+.escrita .box{
+  font-size: 13px;
+  display: inline-block;
+  background-color: #0BBF7D;
+  padding: 10px 20px; 
+  border-radius: 20px;
+  text-overflow:clip;
+  max-width: 160px;
+  text-overflow: ellipsis;
+  margin: 10px 0;
+  color: black;
+  clear: both;
+}
+
+.escrita .eu{
+  float: right;
+  background-color: #037353;
+  color: whitesmoke;
+}
+
+.escrita .eu small{
+  display: inline-block;
+  top: 5px;
+  float: left;
+}
+
+.escrita .box small{
+  display: inline-block;
+  top: 5px;
+  float: right;
+}
+
+.escrita .box p{
+  text-overflow:clip;
+  max-width: 180px;
+  overflow: hidden;
+}
+
+.teclado{
+    height: 54px;
+    background-color: #0A5951;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.escrever{
+  padding: 10px 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #037353;
+  color: whitesmoke;
+}
+::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.detalhes-sup{
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.som{
+  width: 45px;
+  border:rgb(85, 83, 83) 1.5px solid;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.camera{
+  width: 8px;
+  height: 8px;
+  background-color: rgb(24, 24, 24);
+  border-radius: 10px;
+  border:rgb(85, 83, 83) 1.5px solid;
+  margin-right: 8px;
+}
+
+.detalhes-inf{
+  
+  height: 60px;
+  width: 100%;
+  align-self:flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao{
+  height: 40px;
+  width: 40px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 40px;
+  border:grey 1.5px solid;
+  cursor: pointer;
+}
+
+.botao:hover{
+  background-color: rgb(32, 30, 30);
+}
+#box-menu{
+  position: absolute;
+  width:100%;
+  background-color:  #324E59;
+  z-index: 100%;
+  height: 450px;
+}
+
+.usuario{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  margin-bottom: 3px;
+  background-color:#037353;
+  cursor: pointer;
+}
+
+.usuario:hover{
+    background-color: #0BBF7D;
+}
+.foto{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.infos{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.contatos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 7px;
+  background-color:#0A5951;
+}
+
+.fa-search{
+  margin-right: 5px;
+}
+
+.conversa1, .conversa2, .conversa3{
+  display: none;
+}
+
+.aparecer{
+  display:block;
+}
+.desaparecer{
+  display: none;
+}
+
+.fa-ellipsis-v{
+  cursor: pointer;
+}
